@@ -1,22 +1,99 @@
-## What can you do now?
+## Skey
 
-If you are following the [PATH NAME](https://projects.raspberrypi.org/en/pathways/PATH-NAME) pathway, you can move on to the [NEXT PROJECT/PATH NAME](https://projects.raspberrypi.org/en/projects/PROJECT-SLUG) project. In this project, you will do DESCRIPTION.
+--- task ---
 
------- OR ---------
+Select the **Skey** sprite. ![The Skey sprite](images/Skey.png)
 
-Try our [PROJECT/PATH NAME](https://projects.raspberrypi.org/en/collections/PATH-SLUG) project pathway where you will DESCRIPTION.
+--- /task ---
 
---- print-only --- 
+### Move to the peg
 
-![ALT TEXT](images/IMAGE-FROM-PROJECT.png)
+Animate the skey when thrown.
 
---- /print-only ---
+--- task ---
 
---- no-print ---
+Set the initial position of the skey.
 
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/STARTER_PROJECT_SLUG" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
+```blocks3
++when I receive [throw v]
++go to x: (-127) y: (29)
++set rotation style [all around v]
++point towards (Pen v)
++start sound (Siren Whistle v)
+```
 
---- /no-print ---
+--- /task ---
 
-Or, why not try out another [CODING_LANGUAGE](https://projects.raspberrypi.org/en/projects?software%5B%5D=CODING_LANGUAGE) project.
+--- task ---
+
+Arc the skey through the air
+
+```blocks3
+when I receive [throw v]
+go to x: (-127) y: (29)
+set rotation style [all around v]
+point towards (Pen v)
+start sound (Siren Whistle v)
++repeat until <(distance to (Pen v)) < (Landing x)>
+  turn cw (15) degrees
+  move (10) steps
+  point towards (Pen v)
+end
++start sound (Whistle Thump v)
++wait (0.5) seconds
+```
+
+--- /task ---
+
+--- task ---
+
+**Test:** Press `t` - check the skey moves through the air in an arc and that throwing and landing sounds play.
+
+--- /task ---
+
+--- task ---
+
+Reset the position of the skey after it lands.
+
+```blocks3
+when I receive [throw v]
+go to x: (-127) y: (29)
+set rotation style [all around v]
+point towards (Pen v)
+start sound (Siren Whistle v)
+repeat until <(distance to (Pen v)) < (Landing x)>
+  turn cw (15) degrees
+  move (10) steps
+  point towards (Pen v)
+end
+start sound (Whistle Thump v)
+wait (0.5) seconds
++go to x: (-136) y: (-11)
++point in direction (120)
+```
+
+--- /task ---
+
+--- task ---
+
+Trigger scoring.
+
+```blocks3
+when I receive [throw v]
+go to x: (-127) y: (29)
+set rotation style [all around v]
+point towards (Pen v)
+start sound (Siren Whistle v)
+repeat until <(distance to (Pen v)) < (Landing x)>
+  turn cw (15) degrees
+  move (10) steps
+  point towards (Pen v)
+end
+start sound (Whistle Thump v)
+wait (0.5) seconds
+go to x: (-136) y: (-11)
+point in direction (120)
++broadcast (score v)
+```
+
+--- /task ---

@@ -1,11 +1,18 @@
-title: default-project-template
+title: Jukskei
 hero_image: images/banner.png
-description: default-project-template description
+description: Build your own jukskei game with Scratch!
 version: 1
 listed: false
 copyedit: false
 last_tested: "2025-01-01"
 steps:
   - title: What you will make
-  - title: Step title
+  - title: Player
+    completion: engaged
+  - title: Skey
+  - title: Peg
+    completion: internal
+  - title: Challenge
+    challenge: true
   - title: What can you do now?
+    completion: external
