@@ -10,7 +10,7 @@ The starter project contains some starter code and all the sprites you need.
 
 --- task ---
 
-Select the **Player** sprite. ![The Player sprite](images/Player.png){ width: 200px; }
+Select the **Player** sprite. ![The Player sprite](images/Player.png){:width="200px"}
 
 --- /task ---
 
