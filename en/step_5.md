@@ -4,7 +4,7 @@
 
 --- task ---
 
-Select the **Hat** sprite. ![The Hat sprite](images/Hat.png)
+Select the **Hat** sprite. ![The Hat sprite](images/Hat.png){ width: 200px; }
 
 --- /task ---
 

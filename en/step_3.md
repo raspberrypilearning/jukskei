@@ -2,7 +2,7 @@
 
 --- task ---
 
-Select the **Skey** sprite. ![The Skey sprite](images/Skey.png)
+Select the **Skey** sprite. ![The Skey sprite](images/Skey.png){ width: 200px; }
 
 --- /task ---
 
