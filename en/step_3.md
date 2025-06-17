@@ -2,17 +2,17 @@
 
 --- task ---
 
+**TODO**
+
 Select the **Skey** sprite. ![The Skey sprite](images/Skey.png)
 
 --- /task ---
 
 ### Move to the peg
 
-Animate the skey when thrown.
+Set the initial position of the skey.
 
 --- task ---
-
-Set the initial position of the skey.
 
 ```blocks3
 +when I receive [throw v]
@@ -24,9 +24,9 @@ Set the initial position of the skey.
 
 --- /task ---
 
---- task ---
-
 Arc the skey through the air
+
+--- task ---
 
 ```blocks3
 when I receive [throw v]
@@ -51,9 +51,11 @@ end
 
 --- /task ---
 
---- task ---
+### Reset
 
 Reset the position of the skey after it lands.
+
+--- task ---
 
 ```blocks3
 when I receive [throw v]
@@ -74,9 +76,9 @@ wait (0.5) seconds
 
 --- /task ---
 
---- task ---
+### Trigger scoring
 
-Trigger scoring.
+--- task ---
 
 ```blocks3
 when I receive [throw v]

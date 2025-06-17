@@ -2,8 +2,14 @@
 
 --- task ---
 
+HAT
+
+Controls
+
+Choose and animate a different player 
+
+
 **TODO**
-Open the [starter project](https://scratch.mit.edu/projects/1170742109/editor/){:target="_blank"}.
 
 --- /task ---
 
