@@ -28,8 +28,10 @@ end
 
 Add reset code.
 
+```blocks3
 +when [n v] key pressed
 +hide
+```
 
 --- /task ---
 
@@ -57,6 +59,7 @@ Add text to the Controls backdrop to show how to control the game.
 
 Add this single block of code to the ‘when n key pressed’ script.
 
+```blocks3
 when [n v] key pressed
 stop all sounds
 set [Score v] to [0]
@@ -66,6 +69,7 @@ set [Throws left v] to [3]
 show variable [Power v]
 show variable [Score v]
 show variable [Throws left v]
+```
 
 --- /task ---
 
