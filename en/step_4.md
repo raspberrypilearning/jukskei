@@ -2,8 +2,6 @@
 
 --- task ---
 
-**TODO**
-
 Select the **Peg** sprite. ![The Peg sprite](images/Peg.png)
 
 --- /task ---

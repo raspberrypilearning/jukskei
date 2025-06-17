@@ -2,17 +2,13 @@
 
 --- task ---
 
-**TODO**
-
-Open the [starter project](https://scratch.mit.edu/projects/1170742109/editor/){:target="_blank"}.
+Open the [starter project](https://scratch.mit.edu/projects/1187059894/editor/){:target="_blank"}.
 
 --- /task ---
 
 The starter project contains some starter code and all the sprites you need.
 
 --- task ---
-
-**TODO**
 
 Select the **Player** sprite. ![The Player sprite](images/Player.png)
 

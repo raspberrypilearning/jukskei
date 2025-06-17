@@ -2,8 +2,6 @@
 
 --- task ---
 
-**TODO**
-
 Select the **Skey** sprite. ![The Skey sprite](images/Skey.png)
 
 --- /task ---
