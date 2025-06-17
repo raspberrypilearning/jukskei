@@ -2,7 +2,7 @@
 
 --- task ---
 
-Select the **Peg** sprite. ![The Peg sprite](images/Peg.png){ width: 200px; }
+Select the **Peg** sprite. ![The Peg sprite](images/Peg.png){:width="200px"}
 
 --- /task ---
 
