@@ -1,4 +1,4 @@
-## What you will make
+## Wat ga je maken
 
 Create a fun jukskei game!
 
