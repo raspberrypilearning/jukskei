@@ -1,3 +1,3 @@
-## What can you do now?
+## Que pouvez-vous faire maintenant ?
 
-Try another [Scratch](https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch){:target="_blank"} project!
+Essayez un autre projet [Scratch](https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch){:target="_blank"} !
