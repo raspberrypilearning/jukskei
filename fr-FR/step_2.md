@@ -1,26 +1,26 @@
-## Player
+## Joueur
 
 \--- task ---
 
-Open the [starter project](https://scratch.mit.edu/projects/1187059894/editor/){:target="_blank"}.
+Ouvrez le [projet de démarrage](https://scratch.mit.edu/projects/1187059894/editor/){:target="_blank"}.
 
 \--- /task ---
 
-The starter project contains some starter code and all the sprites you need.
+Le projet de démarrage contient du code de démarrage et tous les sprites dont vous avez besoin.
 
 \--- task ---
 
-Select the **Player** sprite. ![The Player sprite](images/Player.png){:width="100px"}
+Sélectionnez le sprite **Joueur**. ![The Player sprite](images/Player.png){:width="100px"}
 
 \--- /task ---
 
-### Throw!
+### Lancer!
 
-Animate the Player when they throw a skey.
+Animez le joueur lorsqu'il lance une clé.
 
 \--- task ---
 
-In the `when I receive`{:class="block3events"} block, switch the costume.
+Dans le bloc « quand je reçois » {:class="block3events"}, changez de costume.
 
 ```blocks3
 +when I receive [throw v]
@@ -35,8 +35,8 @@ In the `when I receive`{:class="block3events"} block, switch the costume.
 
 **Test:**
 
-- Press `n` to start a new game, then `t` to start a new throw - check the power bar cycles from 0 to 100.
+- Appuyez sur « n » pour démarrer une nouvelle partie, puis sur « t » pour démarrer un nouveau lancer - vérifiez que la barre d'alimentation passe de 0 à 100.
 
-- Press `space` to stop the power bar -  check the player changes costume to the throw costume and then returns back to the still costume
+- Appuyez sur « espace » pour arrêter la barre de puissance - vérifiez que le joueur change de costume pour le costume de lancer, puis revient au costume fixe
 
 \--- /task ---
