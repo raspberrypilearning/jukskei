@@ -1,20 +1,20 @@
-## What you will make
+## Ce que tu feras
 
-Create a fun jukskei game!
+Créez un jeu de jukskei amusant !
 
 \--- print-only ---
 
-![The finished jukskei game showing a hill with the a mythical player holding a skey and a peg in the floor nearby](images/Jukskei.png)
+![Le jeu de jukskei terminé montrant une colline avec un joueur mythique tenant une clé et un piquet dans le sol à proximité](images/Jukskei.png)
 
 \--- /print-only ---
 
 \--- no-print ---
 
-Play the finished game.
+Jouez au jeu terminé.
 
-- Press `n` to start a new game!
-- Press `t` to throw
-- Press `space` to select power
+- Appuyez sur « n » pour démarrer une nouvelle partie !
+- Appuyez sur « t » pour lancer
+- Appuyez sur « espace » pour sélectionner l'alimentation
 
 <div class="scratch-preview">
  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1177312843/?autostart=false" frameborder="0"></iframe>
