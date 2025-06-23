@@ -2,98 +2,98 @@
 
 \--- task ---
 
-Select the **Skey** sprite. ![The Skey sprite](images/Skey.png){:width="100px"}
+Sélectionnez le sprite **Skey**. ![Le sprite Skey](images/Skey.png){:width="100px"}
 
 \--- /task ---
 
-### Move to the peg
+### Déplacez-vous vers la cheville
 
-Set the initial position of the skey.
+Définissez la position initiale de la touche.
 
 \--- task ---
 
 ```blocks3
-+when I receive [throw v]
-+go to x: (-127) y: (29)
-+set rotation style [all around v]
-+point towards (Pen v)
-+start sound (Siren Whistle v)
++quand je reçois [lancer v]
++aller à x : (-127) y : (29)
++définir le style de rotation [tout autour de v]
++pointer vers (Stylo v)
++démarrer le son (Sirène sifflet v)
 ```
 
 \--- /task ---
 
-Arc the skey through the air
+Lancez l'arc dans les airs
 
 \--- task ---
 
 ```blocks3
-when I receive [throw v]
-go to x: (-127) y: (29)
-set rotation style [all around v]
-point towards (Pen v)
-start sound (Siren Whistle v)
-+repeat until <(distance to (Pen v)) < (Landing x)>
-  turn cw (15) degrees
-  move (10) steps
-  point towards (Pen v)
-end
-+start sound (Whistle Thump v)
-+wait (0.5) seconds
+quand je reçois [lancer v]
+aller à x : (-127) y : (29)
+définir le style de rotation [tout autour de v]
+pointer vers (Stylo v)
+démarrer le son (Sifflet de sirène v)
++répéter jusqu'à <(distance à (Stylo v)) < (Atterrissage x)>
+  tourner dans le sens des aiguilles d'une montre (15) degrés
+  se déplacer (10) pas
+  pointer vers (Stylo v)
+fin
++démarrer le son (Sifflet cognant v)
++attendre (0,5) seconde
 ```
 
 \--- /task ---
 
 \--- task ---
 
-**Test:** Press `t` - check the skey moves through the air in an arc and that throwing and landing sounds play.
+**Test :** Appuyez sur « t » pour vérifier que la touche se déplace dans l'air en arc de cercle et que les sons de lancer et d'atterrissage sont émis.
 
 \--- /task ---
 
-### Reset
+### Réinitialiser
 
-Reset the position of the skey after it lands.
+Réinitialisez la position de la clé après son atterrissage.
 
 \--- task ---
 
 ```blocks3
-when I receive [throw v]
-go to x: (-127) y: (29)
-set rotation style [all around v]
-point towards (Pen v)
-start sound (Siren Whistle v)
-repeat until <(distance to (Pen v)) < (Landing x)>
-  turn cw (15) degrees
-  move (10) steps
-  point towards (Pen v)
-end
-start sound (Whistle Thump v)
-wait (0.5) seconds
-+go to x: (-136) y: (-11)
-+point in direction (120)
+quand je reçois [lancer v]
+aller à x : (-127) y : (29)
+définir le style de rotation [tout autour de v]
+pointer vers (Stylo v)
+démarrer le son (Sifflet de sirène v)
+répéter jusqu'à <(distance à (Stylo v)) < (Atterrissage x)>
+  tourner dans le sens des aiguilles d'une montre (15) degrés
+  déplacer (10) pas
+  pointer vers (Stylo v)
+fin
+démarrer le son (Sifflet coupant v)
+attendre (0,5) seconde
++aller à x : (-136) y : -11
++pointer dans la direction (120)
 ```
 
 \--- /task ---
 
-### Trigger scoring
+### Notation des déclencheurs
 
 \--- task ---
 
 ```blocks3
-when I receive [throw v]
-go to x: (-127) y: (29)
-set rotation style [all around v]
-point towards (Pen v)
-start sound (Siren Whistle v)
-repeat until <(distance to (Pen v)) < (Landing x)>
-  turn cw (15) degrees
-  move (10) steps
-  point towards (Pen v)
-end
-start sound (Whistle Thump v)
-wait (0.5) seconds
-go to x: (-136) y: (-11)
-point in direction (120)
-+broadcast (score v)
+quand je reçois [lancer v]
+aller à x : (-127) y : (29)
+définir le style de rotation [tout autour de v]
+pointer vers (Stylo v)
+démarrer le son (Sifflet de sirène v)
+répéter jusqu'à <(distance à (Stylo v)) < (Atterrissage x)>
+  tourner dans le sens des aiguilles d'une montre (15) degrés
+  déplacer (10) pas
+  pointer vers (Stylo v)
+fin
+démarrer le son (Sifflet coupant v)
+attendre (0,5) seconde
+aller à x : (-136) y : -11
+pointer dans la direction (120)
++diffusion (score v)
 ```
 
 \--- /task ---
