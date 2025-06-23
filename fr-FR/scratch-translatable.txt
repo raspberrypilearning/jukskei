@@ -1,8 +1,8 @@
-throw
+lancer
 
-still
+toujours
 
-Landing
+Atterrissage
 
 score
 
