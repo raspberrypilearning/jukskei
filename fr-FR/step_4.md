@@ -1,79 +1,79 @@
-## Peg
+## Cheville
 
 \--- task ---
 
-Select the **Peg** sprite. ![The Peg sprite](images/Peg.png){:width="100px"}
+Sélectionnez le sprite **Peg**. ![Le sprite Peg](images/Peg.png){:width="100px"}
 
 \--- /task ---
 
-### Change the score
+### Changer le score
 
-More points if the skey lands closer to the peg.
+Plus de points si la clé atterrit plus près du piquet.
 
 \--- task ---
 
 ```blocks3
-+when I receive [score v]
-+change [Score v] by ((120) - (Landing x))
-+change [Throws left v] by (-1)
-+set [Power v] to (0)
++quand je reçois [score v]
++change [Score v] de ((120) - (Atterrissage x))
++change [Lancements gauches v] de (-1)
++définir [Puissance v] sur (0)
 ```
 
 \--- /task ---
 
 \--- task ---
 
-**Test:** Press `t` - check the score increases, the number of throws reduces by 1 and the power resets.
+**Test :** Appuyez sur « t » - vérifiez que le score augmente, que le nombre de lancers diminue de 1 et que la puissance se réinitialise.
 
 \--- /task ---
 
-### Display the score
+### Afficher le score
 
-When there are no throws left, show the score, then reset the throws and score.
+Lorsqu'il n'y a plus de lancers, affichez le score, puis réinitialisez les lancers et le score.
 
 \--- task ---
 
-**Notice**: There is a space after the word 'Score: ' to separate the score from the word.
+**Remarque** : Il y a un espace après le mot « Score : » pour séparer le score du mot.
 
 ```blocks3
-when I receive [score v]
-change [Score v] by ((120) - (Landing x))
-change [Throws left v] by (-1)
-set [Power v] to (0)
-+if <(Throws left) = (0)> then
-	say (join [Score: ] (Score)) for (2) seconds
-	set [Throws left v] to (3)
-	set [Score v] to (0)
-else
+quand je reçois [score v]
+changer [Score v] de ((120) - (Atterrissage x))
+changer [Lancer à gauche v] de (-1)
+définir [Puissance v] à (0)
++si <(Lancer à gauche) = (0)> alors
+	dire (joindre [Score: ] (Score)) pendant (2) secondes
+	définir [Lancer à gauche v] à (3)
+	définir [Score v] à (0)
+sinon
 ```
 
 \--- /task ---
 
-### Tell the player to throw again
+### Dites au joueur de relancer
 
 \--- task ---
 
 ```blocks3
-when I receive [score v]
-change [Score v] by ((120) - (Landing x))
-change [Throws left v] by (-1)
-set [Power v] to (0)
-if <(Throws left) = (0)> then
-	say (join [Score: ] (Score)) for (2) seconds
-	set [Throws left v] to (3)
-	set [Score v] to (0)
-else
-	+say [Press t for next throw] for (1) seconds
-+stop [this script v]
+quand je reçois [score v]
+changer [Score v] par ((120) - (Atterrissage x))
+changer [Lancer à gauche v] par (-1)
+régler [Puissance v] sur (0)
+si <(Lancer à gauche) = (0)> alors
+	dire (joindre [Score: ] (Score)) pendant (2) secondes
+	régler [Lancer à gauche v] sur (3)
+	régler [Score v] sur (0)
+sinon
+	+dire [Appuyer sur t pour lancer suivant] pendant (1) secondes
++arrêter [ce script v]
 ```
 
 \--- /task ---
 
 \--- task ---
 
-**Test:** Press `t` again.
+**Test :** Appuyez à nouveau sur « t ».
 
-- If there are throws left - check a prompt appears to continue.
-- If there are no throws left - check the score is shown and then the throws and score are reset.
+- S'il reste des lancers, vérifiez qu'une invite apparaît pour continuer.
+- S'il n'y a plus de lancers, vérifiez que le score est affiché, puis les lancers et le score sont réinitialisés.
 
 \--- /task ---
