@@ -1,4 +1,4 @@
-name: "Code Project Example"
+name: "Exemple de projet de code"
 identifier: "code-project-example"
 type: 'python'
 build: false
