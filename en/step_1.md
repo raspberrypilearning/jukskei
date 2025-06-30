@@ -1,6 +1,6 @@
 ## What you will make
 
-Create a fun jukskei game!
+In Jukskei, players try to knock over a wooden peg by throwing a skey at it. It takes skill, aim, and timing. That’s what your Scratch game will test!
 
 --- print-only ---
 
@@ -12,9 +12,9 @@ Create a fun jukskei game!
 
 Play the finished game.
 
-- Press `n` to start a new game!
-- Press `t` to throw
-- Press `space` to select power
+- Press `N` to start a new game!
+- Press `T` to start a new throw
+- Press `SPACE` to select power and throw
 
 <div class="scratch-preview">
  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1177312843/?autostart=false" frameborder="0"></iframe>

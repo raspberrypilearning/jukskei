@@ -2,6 +2,8 @@
 
 ### Add a celebration!
 
+Add a party hat and play a tune when a score is reached!
+
 --- task ---
 
 Select the **Hat** sprite. ![The Hat sprite](images/Hat.png){:width="100px"}
@@ -10,13 +12,13 @@ Select the **Hat** sprite. ![The Hat sprite](images/Hat.png){:width="100px"}
 
 --- task ---
 
-Show the hat and play a sound on a high score.
+When a score more than (`>`) 200 is reached, the Hat sprite will show and a sound will play.
 
 ```blocks3
 +when I receive [score v]
 +forever
-	if <(Score) > (200)> then
-    	show                              	// Try changing this score
+	if <(Score) > (200)> then // Try changing this score
+    	show                              	
     	play sound [Dubstep v] until done 	// You can change the sound
 	end
 end
@@ -37,15 +39,21 @@ Add reset code.
 
 --- task ---
 
-**Test:** Press `n` and play to a score above 200 - check the hat shows and you hear your chosen sound!
+**Test:** Press `N` and play to a score above 200 - check the hat shows and you hear your chosen sound!
 
 --- /task ---
 
-### Add a controls screen
+### Show the game controls
 
 --- task ---
 
-Select the Stage, duplicate the Hill backdrop and rename it ‘Controls’.
+Select the Stage and open the Backdrops tab.
+
+--- /task ---
+
+--- task ---
+
+Duplicate the Hill backdrop and rename it ‘Controls’.
 
 --- /task ---
 

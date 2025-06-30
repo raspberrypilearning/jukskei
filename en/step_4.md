@@ -1,4 +1,4 @@
-## Peg
+## Scoring on the peg
 
 --- task ---
 
@@ -13,9 +13,9 @@ More points if the skey lands closer to the peg.
 --- task ---
 
 ```blocks3
-+when I receive [score v]
-+change [Score v] by ((120) - (Landing x))
++when I receive [score v] // Receive the broadcast message from before. 
 +change [Throws left v] by (-1)
++change [Score v] by ((120) - (Landing x))
 +set [Power v] to (0)
 ```
 
@@ -23,7 +23,7 @@ More points if the skey lands closer to the peg.
 
 --- task ---
 
-**Test:** Press `t` - check the score increases, the number of throws reduces by 1 and the power resets.
+**Test:** Press `T` - check the score increases, the number of throws reduces by 1 and the power resets.
 
 --- /task ---
 
@@ -37,8 +37,8 @@ When there are no throws left, show the score, then reset the throws and score.
 
 ```blocks3
 when I receive [score v]
-change [Score v] by ((120) - (Landing x))
 change [Throws left v] by (-1)
+change [Score v] by ((120) - (Landing x))
 set [Power v] to (0)
 +if <(Throws left) = (0)> then
 	say (join [Score: ] (Score)) for (2) seconds
@@ -55,15 +55,16 @@ else
 
 ```blocks3
 when I receive [score v]
-change [Score v] by ((120) - (Landing x))
 change [Throws left v] by (-1)
+change [Score v] by ((120) - (Landing x))
 set [Power v] to (0)
 if <(Throws left) = (0)> then
 	say (join [Score: ] (Score)) for (2) seconds
 	set [Throws left v] to (3)
 	set [Score v] to (0)
 else
-	+say [Press t for next throw] for (1) seconds
++	say [Press T for next throw] for (1) seconds
+end
 +stop [this script v]
 ```
 
@@ -71,7 +72,7 @@ else
 
 --- task ---
 
-**Test:** Press `t` again. 
+**Test:** Press `T` again. 
 
 - If there are throws left - check a prompt appears to continue.
 - If there are no throws left - check the score is shown and then the throws and score are reset.

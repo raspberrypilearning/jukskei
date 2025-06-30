@@ -1,4 +1,4 @@
-## Skey
+## The skey sprite
 
 --- task ---
 
@@ -16,13 +16,13 @@ Set the initial position of the skey.
 +when I receive [throw v]
 +go to x: (-127) y: (29)
 +set rotation style [all around v]
-+point towards (Pen v)
++point towards (Peg v)
 +start sound (Siren Whistle v)
 ```
 
 --- /task ---
 
-Arc the skey through the air
+Arc the skey through the air.
 
 --- task ---
 
@@ -30,12 +30,12 @@ Arc the skey through the air
 when I receive [throw v]
 go to x: (-127) y: (29)
 set rotation style [all around v]
-point towards (Pen v)
+point towards (Peg v)
 start sound (Siren Whistle v)
-+repeat until <(distance to (Pen v)) < (Landing x)>
++repeat until <(distance to (Peg v)) < (Landing x)> // < means 'less than'
   turn cw (15) degrees
   move (10) steps
-  point towards (Pen v)
+  point towards (Peg v)
 end
 +start sound (Whistle Thump v)
 +wait (0.5) seconds
@@ -45,7 +45,7 @@ end
 
 --- task ---
 
-**Test:** Press `t` - check the skey moves through the air in an arc and that throwing and landing sounds play.
+**Test:** Press `T` - check the skey moves through the air in an arc and that throwing and landing sounds play.
 
 --- /task ---
 
@@ -59,12 +59,12 @@ Reset the position of the skey after it lands.
 when I receive [throw v]
 go to x: (-127) y: (29)
 set rotation style [all around v]
-point towards (Pen v)
+point towards (Peg v)
 start sound (Siren Whistle v)
-repeat until <(distance to (Pen v)) < (Landing x)>
+repeat until <(distance to (Peg v)) < (Landing x)>
   turn cw (15) degrees
   move (10) steps
-  point towards (Pen v)
+  point towards (Peg v)
 end
 start sound (Whistle Thump v)
 wait (0.5) seconds
@@ -76,18 +76,20 @@ wait (0.5) seconds
 
 ### Trigger scoring
 
+Add a broadcast message to trigger scoring.
+
 --- task ---
 
 ```blocks3
 when I receive [throw v]
 go to x: (-127) y: (29)
 set rotation style [all around v]
-point towards (Pen v)
+point towards (Peg v)
 start sound (Siren Whistle v)
-repeat until <(distance to (Pen v)) < (Landing x)>
+repeat until <(distance to (Peg v)) < (Landing x)>
   turn cw (15) degrees
   move (10) steps
-  point towards (Pen v)
+  point towards (Peg v)
 end
 start sound (Whistle Thump v)
 wait (0.5) seconds
