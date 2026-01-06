@@ -2,13 +2,13 @@
 
 --- task ---
 
-Select the **Peg** sprite. ![The Peg sprite](images/Peg.png){:width="100px"}
+Select the **peg** sprite. ![The Peg sprite](images/Peg.png){:width="100px"}
 
 --- /task ---
 
 ### Change the score
 
-More points if the skey lands closer to the peg.
+The skey receives more points if it lands closer to the peg.
 
 --- task ---
 
@@ -23,7 +23,7 @@ More points if the skey lands closer to the peg.
 
 --- task ---
 
-**Test:** Press `T` - check the score increases, the number of throws reduces by 1 and the power resets.
+**Test:** Press `T'. Check the score increases and that the number of throws reduces by 1 and the power resets.
 
 --- /task ---
 
@@ -74,7 +74,7 @@ end
 
 **Test:** Press `T` again. 
 
-- If there are throws left - check a prompt appears to continue.
-- If there are no throws left - check the score is shown and then the throws and score are reset.
+- If there are throws left, check a prompt appears to continue.
+- If there are no throws left, check the score is shown and that then the throws and score are reset.
 
 --- /task ---
