@@ -6,13 +6,13 @@ Add a party hat and play a tune when a score is reached!
 
 --- task ---
 
-Select the **Hat** sprite. ![The Hat sprite](images/Hat.png){:width="100px"}
+Select the **hat** sprite. ![The hat sprite](images/Hat.png){:width="100px"}
 
 --- /task ---
 
 --- task ---
 
-When a score more than (`>`) 200 is reached, the Hat sprite will show and a sound will play.
+When a score more than (`>`) 200 is reached, the hat sprite will show and a sound will play.
 
 ```blocks3
 +when I receive [score v]
@@ -39,7 +39,7 @@ Add reset code.
 
 --- task ---
 
-**Test:** Press `N` and play to a score above 200 - check the hat shows and you hear your chosen sound!
+**Test:** Press `N` and play to a score above 200, then check the hat shows and you hear your chosen sound.
 
 --- /task ---
 
@@ -85,7 +85,7 @@ show variable [Throws left v]
 
 --- task ---
 
-Choose the Player sprite and select a new sprite from the library, paint your own, upload an image, or select a random one.
+Choose the player sprite and select a new sprite from the library, paint your own, upload an image, or select a random one.
 
 --- /task ---
 
