@@ -39,7 +39,7 @@ Add reset code.
 
 --- task ---
 
-**Test:** Press `N` and play to a score above 200 - check the hat shows and you hear your chosen sound!
+**Test:** Press `N` and play to a score above 200, then check the hat shows and you hear your chosen sound.
 
 --- /task ---
 

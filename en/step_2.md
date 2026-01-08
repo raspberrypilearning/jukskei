@@ -1,4 +1,4 @@
-## Animate the Player sprite
+## Animate the player sprite
 
 --- task ---
 
@@ -6,7 +6,7 @@ Open the [starter project](https://scratch.mit.edu/projects/1202448566/editor/){
 
 --- /task ---
 
-The starter project contains some starter code and all the sprites you need.
+The starter project contains starter code and all the sprites you need.
 
 --- task ---
 
@@ -35,9 +35,9 @@ In the `when I receive`{:class="block3events"} block, switch the costume.
 
 **Test:** 
 
-- Press `N` to start a new game, then `T` to start a new throw - check the power bar cycles from 0 to 100.
+- Press `N` to start a new game, then `T` to start a new throw. Check the power bar cycles from 0 to 100.
 The skey will not move yet.
 
-- Press `SPACE` to stop the power bar -  check the player changes costume to the throw costume and then returns back to the still costume
+- Press `SPACE` to stop the power bar. Check the Player sprite changes costume to the throw costume and then returns back to the still costume.
 
 --- /task ---

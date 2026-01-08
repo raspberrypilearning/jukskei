@@ -45,7 +45,7 @@ end
 
 --- task ---
 
-**Test:** Press `T` - check the skey moves through the air in an arc and that throwing and landing sounds play.
+**Test:** Press `T'. Check the skey moves through the air in an arc and that throwing and landing sounds play.
 
 --- /task ---
 
