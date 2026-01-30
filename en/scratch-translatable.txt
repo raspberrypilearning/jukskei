@@ -8,13 +8,15 @@ Landing
 
 score
 
+Score
+
 Score:
 
 n
 
 Throws left
 
-power
+Power
 
 < means 'less than' 
 
