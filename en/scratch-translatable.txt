@@ -20,6 +20,8 @@ Power
 
 < means 'less than' 
 
+Receive the broadcast message from before.
+
 Press T for next throw
 
 Try changing this score
