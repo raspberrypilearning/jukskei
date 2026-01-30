@@ -8,15 +8,19 @@ Landing
 
 score
 
+Score
+
 Score:
 
 n
 
 Throws left
 
-power
+Power
 
 < means 'less than' 
+
+Receive the broadcast message from before.
 
 Press T for next throw
 
