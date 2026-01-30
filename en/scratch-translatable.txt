@@ -16,6 +16,8 @@ Throws left
 
 power
 
+< means 'less than' 
+
 Press T for next throw
 
 Try changing this score
