@@ -17,9 +17,9 @@ Lorsqu'un score supérieur à (`>`) 200 est atteint, le sprite Chapeau apparaît
 ```blocks3
 +when I receive [score v]
 +forever
-	if <(Score) > (200)> then // Try changing this score
+	if <(Score) > (200)> then // Essaie de modifier ce score
     	show                              	
-    	play sound [Dubstep v] until done 	// You can change the sound
+    	play sound [Dubstep v] until done 	// Tu peux changer le son
 	end
 end
 ```
@@ -71,12 +71,12 @@ Ajoute ce bloc de code unique au script « quand la touche n est pressée ».
 when [n v] key pressed
 stop all sounds
 set [Score v] to [0]
-set [Power v] to [0]
-set [Throws left v] to [3]
+set [Puissance v] to [0]
+set [Lancers restants v] to [3]
 +switch backdrop to [Hill v]
-show variable [Power v]
+show variable [Puissance v]
 show variable [Score v]
-show variable [Throws left v]
+show variable [Lancers restants v]
 ```
 
 --- /task ---
@@ -94,14 +94,3 @@ Choisis le sprite Joueur et sélectionne un nouveau sprite dans la bibliothèque
 Assure-toi que ton nouveau sprite possède deux costumes : « lancer » et « immobile » pour conserver l’animation de lancer.
 
 --- /task ---
-
-***
-Ce projet a été traduit par des bénévoles:
-
-[name]
-
-[name]
-
-[name]
-
-Grâce aux bénévoles, nous pouvons donner aux gens du monde entier la chance d'apprendre dans leur propre langue. Vous pouvez nous aider à atteindre plus de personnes en vous portant volontaire pour la traduction - plus d'informations sur [rpf.io/translate](https://rpf.io/translate).

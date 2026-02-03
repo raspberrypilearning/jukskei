@@ -13,10 +13,10 @@ Le skei obtient plus de points s'il atterrit plus près du piquet.
 --- task ---
 
 ```blocks3
-+when I receive [score v] // Receive the broadcast message from before. 
-+change [Throws left v] by (-1)
-+change [Score v] by ((120) - (Landing x))
-+set [Power v] to (0)
++when I receive [score v] // Reçoit le message de diffusion précédemment.
++change [Lancers restants v] by (-1)
++change [Score v] by ((120) - (Atterrissage x))
++set [Puissance v] to (0)
 ```
 
 --- /task ---
@@ -37,12 +37,12 @@ Lorsqu'il ne reste plus de lancers, affiche le score, puis réinitialise les lan
 
 ```blocks3
 when I receive [score v]
-change [Throws left v] by (-1)
-change [Score v] by ((120) - (Landing x))
-set [Power v] to (0)
-+if <(Throws left) = (0)> then
+change [Lancers restants v] by (-1)
+change [Score v] by ((120) - (Atterrissage x))
+set [Puissance v] to (0)
++if <(Lancers restants) = (0)> then
 	say (join [Score: ] (Score)) for (2) seconds
-	set [Throws left v] to (3)
+	set [Lancers restants v] to (3)
 	set [Score v] to (0)
 else
 ```
@@ -55,17 +55,17 @@ else
 
 ```blocks3
 when I receive [score v]
-change [Throws left v] by (-1)
-change [Score v] by ((120) - (Landing x))
-set [Power v] to (0)
-if <(Throws left) = (0)> then
+change [Lancers restants v] by (-1)
+change [Score v] by ((120) - (Atterrissage x))
+set [Puissance v] to (0)
+if <(Lancers restants) = (0)> then
 	say (join [Score: ] (Score)) for (2) seconds
-	set [Throws left v] to (3)
+	set [Lancers restants v] to (3)
 	set [Score v] to (0)
 else
-+	say [Press T for next throw] for (1) seconds
++	say [Appuie sur T pour le prochain lancer] for (1) seconds
 end
-+stop [this script v]
++stop [ce script v]
 ```
 
 --- /task ---
