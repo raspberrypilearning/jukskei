@@ -13,10 +13,10 @@ Stel de beginpositie van de skey in.
 --- task ---
 
 ```blocks3
-+when I receive [throw v]
++when I receive [worp v]
 +go to x: (-127) y: (29)
-+set rotation style [all around v]
-+point towards (Peg v)
++set rotation style [helemaal rond v]
++point towards (Pin v)
 +start sound (Siren Whistle v)
 ```
 
@@ -27,15 +27,15 @@ Laat de skey in een boog door de lucht bewegen.
 --- task ---
 
 ```blocks3
-when I receive [throw v]
+when I receive [worp v]
 go to x: (-127) y: (29)
-set rotation style [all around v]
-point towards (Peg v)
+set rotation style [helemaal rond v]
+point towards (Pin v)
 start sound (Siren Whistle v)
-+repeat until <(distance to (Peg v)) < (Landing x)> // < means 'less than'
++repeat until <(distance to (Pin v)) < (Landen x)> // < betekent 'kleiner dan'
   turn cw (15) degrees
   move (10) steps
-  point towards (Peg v)
+  point towards (Pin v)
 end
 +start sound (Whistle Thump v)
 +wait (0.5) seconds
@@ -56,15 +56,15 @@ Zet de skey terug in de juiste positie nadat deze is geland.
 --- task ---
 
 ```blocks3
-when I receive [throw v]
+when I receive [worp v]
 go to x: (-127) y: (29)
-set rotation style [all around v]
-point towards (Peg v)
+set rotation style [helemaal rond v]
+point towards (Pin v)
 start sound (Siren Whistle v)
-repeat until <(distance to (Peg v)) < (Landing x)>
+repeat until <(distance to (Pin v)) < (Landen x)>
   turn cw (15) degrees
   move (10) steps
-  point towards (Peg v)
+  point towards (Pin v)
 end
 start sound (Whistle Thump v)
 wait (0.5) seconds
@@ -81,15 +81,15 @@ Voeg een bericht toe om de score te activeren.
 --- task ---
 
 ```blocks3
-when I receive [throw v]
+when I receive [worp v]
 go to x: (-127) y: (29)
-set rotation style [all around v]
-point towards (Peg v)
+set rotation style [helemaal rond v]
+point towards (Pin v)
 start sound (Siren Whistle v)
-repeat until <(distance to (Peg v)) < (Landing x)>
+repeat until <(distance to (Pin v)) < (Landen x)>
   turn cw (15) degrees
   move (10) steps
-  point towards (Peg v)
+  point towards (Pin v)
 end
 start sound (Whistle Thump v)
 wait (0.5) seconds

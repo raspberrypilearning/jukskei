@@ -2,7 +2,7 @@
 
 --- task ---
 
-Open het [startproject](https://scratch.mit.edu/projects/1202448566/editor/){:target="_blank"}.
+Open het [startproject](https://scratch.mit.edu/projects/1274585648/editor/){:target="_blank"}.
 
 --- /task ---
 
@@ -23,10 +23,10 @@ Animeer de speler met een werpbeweging.
 In het `wanneer ik signaal ontvang`{:class="block3events"} blok, verander je het uiterlijk.
 
 ```blocks3
-+when I receive [throw v]
-+switch costume to [throw v]
++when I receive [worp v]
++switch costume to [worp v]
 +wait (1) seconds
-+switch costume to [still v]
++switch costume to [stilstaan v]
 ```
 
 --- /task ---

@@ -17,7 +17,7 @@ Speel het voltooide spel.
 - Druk op de spatiebalk om de kracht te selecteren en te werpen
 
 <div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1202448413/?autostart=false" frameborder="0"></iframe>
+ <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1274583062/?autostart=false" frameborder="0"></iframe>
 </div>
 
 --- /no-print ---

@@ -17,9 +17,9 @@ Als een score hoger dan (`>`) 200 wordt bereikt, verschijnt de Hoed-sprite en wo
 ```blocks3
 +when I receive [score v]
 +forever
-	if <(Score) > (200)> then // Try changing this score
+	if <(Score) > (200)> then // Probeer deze score te veranderen
     	show                              	
-    	play sound [Dubstep v] until done 	// You can change the sound
+    	play sound [Dubstep v] until done 	// Je kunt het geluid veranderen
 	end
 end
 ```
@@ -71,12 +71,12 @@ Voeg dit ene codeblok toe aan het script 'wanneer toets n wordt ingedrukt'.
 when [n v] key pressed
 stop all sounds
 set [Score v] to [0]
-set [Power v] to [0]
-set [Throws left v] to [3]
+set [Kracht v] to [0]
+set [Aantal resterende worpen v] to [3]
 +switch backdrop to [Hill v]
-show variable [Power v]
+show variable [Kracht v]
 show variable [Score v]
-show variable [Throws left v]
+show variable [Aantal resterende worpen v]
 ```
 
 --- /task ---
@@ -96,12 +96,11 @@ Zorg ervoor dat je nieuwe sprite twee uiterlijken heeft: 'worp' en 'stilstaan', 
 --- /task ---
 
 ***
+
 Dit project werd vertaald door vrijwilligers:
 
-[name]
+Iny van Beuningen
 
-[name]
-
-[name]
+Robert-Jan Kempenaar
 
 Dankzij vrijwilligers kunnen we mensen over de hele wereld de kans geven om in hun eigen taal te leren. Jij kunt ons helpen meer mensen te bereiken door vrijwillig te starten met vertalen - meer informatie op [rpf.io/translate](https://rpf.io/translate).
