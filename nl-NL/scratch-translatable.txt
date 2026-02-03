@@ -1,0 +1,30 @@
+worp
+
+stilstaan
+
+Pin
+
+Landen
+
+score
+
+Score
+
+Score:
+
+n
+
+Aantal resterende worpen
+
+Kracht
+
+< betekent 'kleiner dan' 
+
+Ontvang het eerder uitgezonden bericht.
+
+Druk op T voor de volgende worp
+
+Probeer deze score te veranderen
+
+Je kunt het geluid veranderen
+
