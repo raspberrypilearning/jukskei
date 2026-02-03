@@ -1,16 +1,16 @@
 ## De skey-sprite
 
-\--- task ---
+--- task ---
 
 Selecteer de **Skey**-sprite. ![De Skey-sprite](images/Skey.png){:width="100px"}
 
-\--- /task ---
+--- /task ---
 
 ### Beweging naar de pin
 
 Stel de beginpositie van de skey in.
 
-\--- task ---
+--- task ---
 
 ```blocks3
 +when I receive [throw v]
@@ -20,11 +20,11 @@ Stel de beginpositie van de skey in.
 +start sound (Siren Whistle v)
 ```
 
-\--- /task ---
+--- /task ---
 
 Laat de skey in een boog door de lucht bewegen.
 
-\--- task ---
+--- task ---
 
 ```blocks3
 when I receive [throw v]
@@ -41,19 +41,19 @@ end
 +wait (0.5) seconds
 ```
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 **Test:** Druk op 'T'. Controleer of de skey in een boog door de lucht beweegt en of de geluiden van het gooien en landen hoorbaar zijn.
 
-\--- /task ---
+--- /task ---
 
 ### Resetten
 
 Zet de skey terug in de juiste positie nadat deze is geland.
 
-\--- task ---
+--- task ---
 
 ```blocks3
 when I receive [throw v]
@@ -72,13 +72,13 @@ wait (0.5) seconds
 +point in direction (120)
 ```
 
-\--- /task ---
+--- /task ---
 
 ### Score activeren
 
 Voeg een bericht toe om de score te activeren.
 
-\--- task ---
+--- task ---
 
 ```blocks3
 when I receive [throw v]
@@ -98,4 +98,4 @@ point in direction (120)
 +broadcast (score v)
 ```
 
-\--- /task ---
+--- /task ---

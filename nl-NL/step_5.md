@@ -4,13 +4,13 @@
 
 Voeg een feestmuts toe en speel een deuntje als een score is bereikt!
 
-\--- task ---
+--- task ---
 
 Selecteer de **Hoed**-sprite. ![De Hoed-sprite](images/Hat.png){:width="100px"}
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 Als een score hoger dan (`>`) 200 wordt bereikt, verschijnt de Hoed-sprite en wordt er een geluid afgespeeld.
 
@@ -24,9 +24,9 @@ Als een score hoger dan (`>`) 200 wordt bereikt, verschijnt de Hoed-sprite en wo
 end
 ```
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 Voeg resetcode toe.
 
@@ -35,35 +35,35 @@ Voeg resetcode toe.
 +hide
 ```
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 **Test:** Druk op `N` en speel tot een score boven de 200. Controleer vervolgens of het hoedje verschijnt en of je het gekozen geluid hoort.
 
-\--- /task ---
+--- /task ---
 
 ### Toon de spelbesturing
 
-\--- task ---
+--- task ---
 
 Selecteer het speelveld en open het tabblad Achtergronden.
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 Dupliceer de achtergrond 'Hill' en hernoem deze naar 'Besturing'.
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 Voeg tekst toe aan de Besturings-achtergrond om te laten zien hoe je het spel bestuurt.
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 Voeg dit ene codeblok toe aan het script 'wanneer toets n wordt ingedrukt'.
 
@@ -79,18 +79,29 @@ show variable [Score v]
 show variable [Throws left v]
 ```
 
-\--- /task ---
+--- /task ---
 
 ### Kies een andere Speler-sprite
 
-\--- task ---
+--- task ---
 
 Kies de Speler-sprite en selecteer een nieuwe sprite uit de bibliotheek, ontwerp er zelf een, upload een afbeelding of selecteer een willekeurige sprite.
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 Zorg ervoor dat je nieuwe sprite twee uiterlijken heeft: 'worp' en 'stilstaan', zodat de worp-animatie behouden blijft.
 
-\--- /task ---
+--- /task ---
+
+***
+Dit project werd vertaald door vrijwilligers:
+
+[name]
+
+[name]
+
+[name]
+
+Dankzij vrijwilligers kunnen we mensen over de hele wereld de kans geven om in hun eigen taal te leren. Jij kunt ons helpen meer mensen te bereiken door vrijwillig te starten met vertalen - meer informatie op [rpf.io/translate](https://rpf.io/translate).
