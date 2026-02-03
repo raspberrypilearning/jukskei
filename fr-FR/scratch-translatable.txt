@@ -1,0 +1,30 @@
+lancer
+
+immobile
+
+Piquet
+
+Atterrissage
+
+score
+
+Score
+
+Score :
+
+n
+
+Lancer gauche
+
+Puissance
+
+< signifie "moins que" 
+
+Reçoit le message de diffusion précédemment.
+
+Appuie sur T pour le prochain lancer
+
+Essaie de modifier ce score
+
+Tu peux changer le son
+
