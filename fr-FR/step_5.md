@@ -4,13 +4,13 @@
 
 Ajoute un chapeau de fête et joue une mélodie lorsqu'un score est atteint !
 
-\--- task ---
+--- task ---
 
 Sélectionne le sprite **Chapeau**. ![Le sprite Chapeau](images/Hat.png){:width="100px"}
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 Lorsqu'un score supérieur à (`>`) 200 est atteint, le sprite Chapeau apparaîtra et un son sera joué.
 
@@ -24,9 +24,9 @@ Lorsqu'un score supérieur à (`>`) 200 est atteint, le sprite Chapeau apparaît
 end
 ```
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 Ajoute le code de réinitialisation.
 
@@ -35,35 +35,35 @@ Ajoute le code de réinitialisation.
 +hide
 ```
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 **Test :** appuie sur `N` et joue jusqu'à un score supérieur à 200, puis vérifie que le chapeau s'affiche et que tu entends le son choisi.
 
-\--- /task ---
+--- /task ---
 
 ### Afficher les commandes du jeu
 
-\--- task ---
+--- task ---
 
 Sélectionne la scène et ouvre l'onglet « Arrière-plans ».
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 Duplique l'arrière-plan Colline et renomme-le « Commandes ».
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 Ajoute du texte à l'arrière-plan des commandes pour indiquer comment contrôler le jeu.
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 Ajoute ce bloc de code unique au script « quand la touche n est pressée ».
 
@@ -79,18 +79,29 @@ show variable [Score v]
 show variable [Throws left v]
 ```
 
-\--- /task ---
+--- /task ---
 
 ### Choisir un autre sprite Joueur
 
-\--- task ---
+--- task ---
 
 Choisis le sprite Joueur et sélectionne un nouveau sprite dans la bibliothèque, crée le tien, télécharge une image ou sélectionnes-en un au hasard.
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 Assure-toi que ton nouveau sprite possède deux costumes : « lancer » et « immobile » pour conserver l’animation de lancer.
 
-\--- /task ---
+--- /task ---
+
+***
+Ce projet a été traduit par des bénévoles:
+
+[name]
+
+[name]
+
+[name]
+
+Grâce aux bénévoles, nous pouvons donner aux gens du monde entier la chance d'apprendre dans leur propre langue. Vous pouvez nous aider à atteindre plus de personnes en vous portant volontaire pour la traduction - plus d'informations sur [rpf.io/translate](https://rpf.io/translate).

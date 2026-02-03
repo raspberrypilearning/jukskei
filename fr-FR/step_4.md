@@ -1,16 +1,16 @@
 ## Score sur le piquet
 
-\--- task ---
+--- task ---
 
 Sélectionne le sprite **Piquet**. ![Le sprite Piquet](images/Peg.png){:width="100px"}
 
-\--- /task ---
+--- /task ---
 
 ### Modifier le score
 
 Le skei obtient plus de points s'il atterrit plus près du piquet.
 
-\--- task ---
+--- task ---
 
 ```blocks3
 +when I receive [score v] // Receive the broadcast message from before. 
@@ -19,19 +19,19 @@ Le skei obtient plus de points s'il atterrit plus près du piquet.
 +set [Power v] to (0)
 ```
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 **Test :** appuie sur `T`. Vérifie que le score augmente, que le nombre de lancers diminue de 1 et que la puissance est réinitialisée.
 
-\--- /task ---
+--- /task ---
 
 ### Afficher le score
 
 Lorsqu'il ne reste plus de lancers, affiche le score, puis réinitialise les lancers et le score.
 
-\--- task ---
+--- task ---
 
 **Remarque** : il y a un espace après le mot « Score : » pour séparer le score du mot.
 
@@ -47,11 +47,11 @@ set [Power v] to (0)
 else
 ```
 
-\--- /task ---
+--- /task ---
 
 ### Dire au joueur de relancer
 
-\--- task ---
+--- task ---
 
 ```blocks3
 when I receive [score v]
@@ -68,13 +68,13 @@ end
 +stop [this script v]
 ```
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 **Test :** appuie de nouveau sur `T`.
 
 - S'il reste des lancers, vérifie si une invite apparaît pour continuer.
 - S'il ne reste plus de lancers, vérifie que le score est affiché, puis que les lancers et le score sont réinitialisés.
 
-\--- /task ---
+--- /task ---

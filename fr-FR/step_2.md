@@ -1,24 +1,24 @@
 ## Animer le sprite Joueur
 
-\--- task ---
+--- task ---
 
 Ouvre le [projet de démarrage](https://scratch.mit.edu/projects/1202448566/editor/){:target="_blank"}.
 
-\--- /task ---
+--- /task ---
 
 Le projet de démarrage contient le code initial et tous les sprites nécessaires.
 
-\--- task ---
+--- task ---
 
 Sélectionne le sprite **Joueur**. ![Le sprite Joueur](images/Player.png){:width="100px"}
 
-\--- /task ---
+--- /task ---
 
 ### Lancer !
 
 Anime le joueur avec un mouvement de lancer.
 
-\--- task ---
+--- task ---
 
 Dans le bloc `quand je reçois`{:class="block3events"}, change le costume.
 
@@ -29,9 +29,9 @@ Dans le bloc `quand je reçois`{:class="block3events"}, change le costume.
 +switch costume to [still v]
 ```
 
-\--- /task ---
+--- /task ---
 
-\--- task ---
+--- task ---
 
 **Test :**
 
@@ -40,4 +40,4 @@ Dans le bloc `quand je reçois`{:class="block3events"}, change le costume.
 
 - Appuie sur `ESPACE` pour arrêter la barre de puissance. Vérifie que le sprite Joueur change de costume pour le costume lancer, puis revient à son costume immobile.
 
-\--- /task ---
+--- /task ---
