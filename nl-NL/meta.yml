@@ -1,0 +1,18 @@
+---
+title: Jukskei
+hero_image: images/banner.png
+description: Bouw je eigen jukskei-spel met Scratch
+version: 1
+listed: true
+copyedit: true
+last_tested: "2026-01-08"
+steps:
+  - title: Wat ga je maken
+  - title: Speler
+    completion: engaged
+  - title: Skey
+  - title: Pin
+    completion: internal
+  - title: Uitdaging
+    challenge: true
+    completion: external
