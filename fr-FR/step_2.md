@@ -2,7 +2,7 @@
 
 --- task ---
 
-Ouvre le [projet de démarrage](https://scratch.mit.edu/projects/1202448566/editor/){:target="_blank"}.
+Ouvre le [projet de démarrage](https://scratch.mit.edu/projects/1274573282/editor/){:target="_blank"}.
 
 --- /task ---
 
@@ -23,10 +23,10 @@ Anime le joueur avec un mouvement de lancer.
 Dans le bloc `quand je reçois`{:class="block3events"}, change le costume.
 
 ```blocks3
-+when I receive [throw v]
-+switch costume to [throw v]
++when I receive [lancer v]
++switch costume to [lancer v]
 +wait (1) seconds
-+switch costume to [still v]
++switch costume to [immobile v]
 ```
 
 --- /task ---

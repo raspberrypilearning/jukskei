@@ -13,10 +13,10 @@ Définis la position initiale du skei.
 --- task ---
 
 ```blocks3
-+when I receive [throw v]
++when I receive [lancer v]
 +go to x: (-127) y: (29)
-+set rotation style [all around v]
-+point towards (Peg v)
++set rotation style [à 360° v]
++point towards (Piquet v)
 +start sound (Siren Whistle v)
 ```
 
@@ -27,15 +27,15 @@ Lance le skei en décrivant un arc dans les airs.
 --- task ---
 
 ```blocks3
-when I receive [throw v]
+when I receive [lancer v]
 go to x: (-127) y: (29)
-set rotation style [all around v]
-point towards (Peg v)
+set rotation style [à 360° v]
+point towards (Piquet v)
 start sound (Siren Whistle v)
-+repeat until <(distance to (Peg v)) < (Landing x)> // < means 'less than'
++repeat until <(distance to (Piquet v)) < (Atterrissage x)> // < signifie "moins que"
   turn cw (15) degrees
   move (10) steps
-  point towards (Peg v)
+  point towards (Piquet v)
 end
 +start sound (Whistle Thump v)
 +wait (0.5) seconds
@@ -56,15 +56,15 @@ Réinitialise la position du skei après son atterrissage.
 --- task ---
 
 ```blocks3
-when I receive [throw v]
+when I receive [lancer v]
 go to x: (-127) y: (29)
-set rotation style [all around v]
-point towards (Peg v)
+set rotation style [à 360° v]
+point towards (Piquet v)
 start sound (Siren Whistle v)
-repeat until <(distance to (Peg v)) < (Landing x)>
+repeat until <(distance to (Piquet v)) < (Atterrissage x)>
   turn cw (15) degrees
   move (10) steps
-  point towards (Peg v)
+  point towards (Piquet v)
 end
 start sound (Whistle Thump v)
 wait (0.5) seconds
@@ -81,15 +81,15 @@ Ajoute un message de diffusion pour déclencher le calcul du score.
 --- task ---
 
 ```blocks3
-when I receive [throw v]
+when I receive [lancer v]
 go to x: (-127) y: (29)
-set rotation style [all around v]
-point towards (Peg v)
+set rotation style [à 360° v]
+point towards (Piquet v)
 start sound (Siren Whistle v)
-repeat until <(distance to (Peg v)) < (Landing x)>
+repeat until <(distance to (Piquet v)) < (Atterrissage x)>
   turn cw (15) degrees
   move (10) steps
-  point towards (Peg v)
+  point towards (Piquet v)
 end
 start sound (Whistle Thump v)
 wait (0.5) seconds
