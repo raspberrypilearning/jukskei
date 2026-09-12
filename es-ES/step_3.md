@@ -1,14 +1,14 @@
-## Le sprite Skei
+## The skey sprite
 
 \--- task ---
 
-Sélectionne le sprite **Skei**. ![Le sprite Skei](images/Skey.png){:width="100px"}
+Select the **Skey** sprite. ![The Skey sprite](images/Skey.png){:width="100px"}
 
 \--- /task ---
 
-### Déplacer vers le piquet
+### Move to the peg
 
-Définis la position initiale du skei.
+Set the initial position of the skey.
 
 \--- task ---
 
@@ -22,7 +22,7 @@ Définis la position initiale du skei.
 
 \--- /task ---
 
-Lance le skei en décrivant un arc dans les airs.
+Arc the skey through the air.
 
 \--- task ---
 
@@ -45,13 +45,13 @@ end
 
 \--- task ---
 
-**Test :** appuie sur `T`. Vérifie que le skei se déplace dans les airs en décrivant un arc et que les sons de lancer et d’atterrissage sont bien joués.
+**Test:** Press \`T'. Check the skey moves through the air in an arc and that throwing and landing sounds play.
 
 \--- /task ---
 
-### Réinitialiser
+### Reset
 
-Réinitialise la position du skei après son atterrissage.
+Reset the position of the skey after it lands.
 
 \--- task ---
 
@@ -74,9 +74,9 @@ wait (0.5) seconds
 
 \--- /task ---
 
-### Déclenchement du score
+### Trigger scoring
 
-Ajoute un message de diffusion pour déclencher le calcul du score.
+Add a broadcast message to trigger scoring.
 
 \--- task ---
 
