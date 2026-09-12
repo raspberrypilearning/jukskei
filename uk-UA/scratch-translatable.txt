@@ -1,0 +1,30 @@
+throw
+
+still
+
+Peg
+
+Landing
+
+score
+
+Score
+
+Score:
+
+n
+
+Throws left
+
+Power
+
+< means 'less than' 
+
+Receive the broadcast message from before.
+
+Press T for next throw
+
+Try changing this score
+
+You can change the sound
+
