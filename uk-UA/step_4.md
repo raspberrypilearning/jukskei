@@ -1,14 +1,14 @@
-## Score sur le piquet
+## Scoring on the peg
 
 \--- task ---
 
-Sélectionne le sprite **Piquet**. ![Le sprite Piquet](images/Peg.png){:width="100px"}
+Select the **Peg** sprite. ![The Peg sprite](images/Peg.png){:width="100px"}
 
 \--- /task ---
 
-### Modifier le score
+### Change the score
 
-Le skei obtient plus de points s'il atterrit plus près du piquet.
+The skey receives more points if it lands closer to the peg.
 
 \--- task ---
 
@@ -23,17 +23,17 @@ Le skei obtient plus de points s'il atterrit plus près du piquet.
 
 \--- task ---
 
-**Test :** appuie sur `T`. Vérifie que le score augmente, que le nombre de lancers diminue de 1 et que la puissance est réinitialisée.
+**Test:** Press \`T'. Check the score increases and that the number of throws reduces by 1 and the power resets.
 
 \--- /task ---
 
-### Afficher le score
+### Display the score
 
-Lorsqu'il ne reste plus de lancers, affiche le score, puis réinitialise les lancers et le score.
+When there are no throws left, show the score, then reset the throws and score.
 
 \--- task ---
 
-**Remarque** : il y a un espace après le mot « Score : » pour séparer le score du mot.
+**Notice**: There is a space after the word 'Score: ' to separate the score from the word.
 
 ```blocks3
 when I receive [score v]
@@ -49,7 +49,7 @@ else
 
 \--- /task ---
 
-### Dire au joueur de relancer
+### Tell the player to throw again
 
 \--- task ---
 
@@ -72,9 +72,9 @@ end
 
 \--- task ---
 
-**Test :** appuie de nouveau sur `T`.
+**Test:** Press `T` again.
 
-- S'il reste des lancers, vérifie si une invite apparaît pour continuer.
-- S'il ne reste plus de lancers, vérifie que le score est affiché, puis que les lancers et le score sont réinitialisés.
+- If there are throws left, check a prompt appears to continue.
+- If there are no throws left, check the score is shown and that then the throws and score are reset.
 
 \--- /task ---
