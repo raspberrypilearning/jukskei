@@ -13,7 +13,7 @@ The skey receives more points if it lands closer to the peg.
 --- task ---
 
 ```blocks3
-+when I receive [score v] // Receive the broadcast message from before. 
++when I receive [score v] // Receive the broadcast message from before.
 +change [Throws left v] by (-1)
 +change [Score v] by ((120) - (Landing x))
 +set [Power v] to (0)
@@ -23,7 +23,7 @@ The skey receives more points if it lands closer to the peg.
 
 --- task ---
 
-**Test:** Press `T'. Check the score increases and that the number of throws reduces by 1 and the power resets.
+**Test:** Press <kbd>T</kbd> to set the power, then <kbd>Space</kbd> to throw. Check the score increases and that the number of throws reduces by 1 and the power resets.
 
 --- /task ---
 
@@ -72,7 +72,7 @@ end
 
 --- task ---
 
-**Test:** Press `T` again. 
+**Test:** Press <kbd>T</kbd> again to set the power, then <kbd>Space</kbd> to throw. Repeat for all three throws.
 
 - If there are throws left, check a prompt appears to continue.
 - If there are no throws left, check the score is shown and that then the throws and score are reset.
