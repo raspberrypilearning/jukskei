@@ -1,70 +1,70 @@
 ## De skey-sprite
 
---- task ---
+\--- task ---
 
 Selecteer de **Skey**-sprite. ![De Skey-sprite](images/Skey.png){:width="100px"}
 
---- /task ---
+\--- /task ---
 
 ### Beweging naar de pin
 
 Stel de beginpositie van de skey in.
 
---- task ---
+\--- task ---
 
 ```blocks3
-+when I receive [worp v]
++when I receive [throw v]
 +go to x: (-127) y: (29)
-+set rotation style [helemaal rond v]
-+point towards (Pin v)
++set rotation style [all around v]
++point towards (Peg v)
 +start sound (Siren Whistle v)
 ```
 
---- /task ---
+\--- /task ---
 
 Laat de skey in een boog door de lucht bewegen.
 
---- task ---
+\--- task ---
 
 ```blocks3
-when I receive [worp v]
+when I receive [throw v]
 go to x: (-127) y: (29)
-set rotation style [helemaal rond v]
-point towards (Pin v)
+set rotation style [all around v]
+point towards (Peg v)
 start sound (Siren Whistle v)
-+repeat until <(distance to (Pin v)) < (Landen x)> // < betekent 'kleiner dan'
++repeat until <(distance to (Peg v)) < (Landing x)> // < means 'less than'
   turn cw (15) degrees
   move (10) steps
-  point towards (Pin v)
+  point towards (Peg v)
 end
 +start sound (Whistle Thump v)
 +wait (0.5) seconds
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
 **Test:** Druk op 'T'. Controleer of de skey in een boog door de lucht beweegt en of de geluiden van het gooien en landen hoorbaar zijn.
 
---- /task ---
+\--- /task ---
 
 ### Resetten
 
 Zet de skey terug in de juiste positie nadat deze is geland.
 
---- task ---
+\--- task ---
 
 ```blocks3
-when I receive [worp v]
+when I receive [throw v]
 go to x: (-127) y: (29)
-set rotation style [helemaal rond v]
-point towards (Pin v)
+set rotation style [all around v]
+point towards (Peg v)
 start sound (Siren Whistle v)
-repeat until <(distance to (Pin v)) < (Landen x)>
+repeat until <(distance to (Peg v)) < (Landing x)>
   turn cw (15) degrees
   move (10) steps
-  point towards (Pin v)
+  point towards (Peg v)
 end
 start sound (Whistle Thump v)
 wait (0.5) seconds
@@ -72,24 +72,24 @@ wait (0.5) seconds
 +point in direction (120)
 ```
 
---- /task ---
+\--- /task ---
 
 ### Score activeren
 
 Voeg een bericht toe om de score te activeren.
 
---- task ---
+\--- task ---
 
 ```blocks3
-when I receive [worp v]
+when I receive [throw v]
 go to x: (-127) y: (29)
-set rotation style [helemaal rond v]
-point towards (Pin v)
+set rotation style [all around v]
+point towards (Peg v)
 start sound (Siren Whistle v)
-repeat until <(distance to (Pin v)) < (Landen x)>
+repeat until <(distance to (Peg v)) < (Landing x)>
   turn cw (15) degrees
   move (10) steps
-  point towards (Pin v)
+  point towards (Peg v)
 end
 start sound (Whistle Thump v)
 wait (0.5) seconds
@@ -98,4 +98,4 @@ point in direction (120)
 +broadcast (score v)
 ```
 
---- /task ---
+\--- /task ---
