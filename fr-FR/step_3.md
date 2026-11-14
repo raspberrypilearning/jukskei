@@ -1,70 +1,70 @@
 ## Le sprite Skei
 
---- task ---
+\--- task ---
 
 Sélectionne le sprite **Skei**. ![Le sprite Skei](images/Skey.png){:width="100px"}
 
---- /task ---
+\--- /task ---
 
 ### Déplacer vers le piquet
 
 Définis la position initiale du skei.
 
---- task ---
+\--- task ---
 
 ```blocks3
-+when I receive [lancer v]
++when I receive [throw v]
 +go to x: (-127) y: (29)
-+set rotation style [à 360° v]
-+point towards (Piquet v)
++set rotation style [all around v]
++point towards (Peg v)
 +start sound (Siren Whistle v)
 ```
 
---- /task ---
+\--- /task ---
 
 Lance le skei en décrivant un arc dans les airs.
 
---- task ---
+\--- task ---
 
 ```blocks3
-when I receive [lancer v]
+when I receive [throw v]
 go to x: (-127) y: (29)
-set rotation style [à 360° v]
-point towards (Piquet v)
+set rotation style [all around v]
+point towards (Peg v)
 start sound (Siren Whistle v)
-+repeat until <(distance to (Piquet v)) < (Atterrissage x)> // < signifie "moins que"
++repeat until <(distance to (Peg v)) < (Landing x)> // < means 'less than'
   turn cw (15) degrees
   move (10) steps
-  point towards (Piquet v)
+  point towards (Peg v)
 end
 +start sound (Whistle Thump v)
 +wait (0.5) seconds
 ```
 
---- /task ---
+\--- /task ---
 
---- task ---
+\--- task ---
 
 **Test :** appuie sur `T`. Vérifie que le skei se déplace dans les airs en décrivant un arc et que les sons de lancer et d’atterrissage sont bien joués.
 
---- /task ---
+\--- /task ---
 
 ### Réinitialiser
 
 Réinitialise la position du skei après son atterrissage.
 
---- task ---
+\--- task ---
 
 ```blocks3
-when I receive [lancer v]
+when I receive [throw v]
 go to x: (-127) y: (29)
-set rotation style [à 360° v]
-point towards (Piquet v)
+set rotation style [all around v]
+point towards (Peg v)
 start sound (Siren Whistle v)
-repeat until <(distance to (Piquet v)) < (Atterrissage x)>
+repeat until <(distance to (Peg v)) < (Landing x)>
   turn cw (15) degrees
   move (10) steps
-  point towards (Piquet v)
+  point towards (Peg v)
 end
 start sound (Whistle Thump v)
 wait (0.5) seconds
@@ -72,24 +72,24 @@ wait (0.5) seconds
 +point in direction (120)
 ```
 
---- /task ---
+\--- /task ---
 
 ### Déclenchement du score
 
 Ajoute un message de diffusion pour déclencher le calcul du score.
 
---- task ---
+\--- task ---
 
 ```blocks3
-when I receive [lancer v]
+when I receive [throw v]
 go to x: (-127) y: (29)
-set rotation style [à 360° v]
-point towards (Piquet v)
+set rotation style [all around v]
+point towards (Peg v)
 start sound (Siren Whistle v)
-repeat until <(distance to (Piquet v)) < (Atterrissage x)>
+repeat until <(distance to (Peg v)) < (Landing x)>
   turn cw (15) degrees
   move (10) steps
-  point towards (Piquet v)
+  point towards (Peg v)
 end
 start sound (Whistle Thump v)
 wait (0.5) seconds
@@ -98,4 +98,4 @@ point in direction (120)
 +broadcast (score v)
 ```
 
---- /task ---
+\--- /task ---
