@@ -45,7 +45,7 @@ end
 
 --- task ---
 
-**Test:** Press `T'. Check the skey moves through the air in an arc and that throwing and landing sounds play.
+**Test:** Press <kbd>N</kbd> to start a new game. Press <kbd>T</kbd> to set the power, then <kbd>Space</kbd> to throw. Check the skey moves through the air in an arc and that throwing and landing sounds play.
 
 --- /task ---
 
